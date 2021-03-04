@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #00252e;
+}
+
+nav {
+  padding: 40px 60px 20px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .button-nav-light {
+  background: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #ff8fd8;
+  border: 1px solid #ff52bf;
+  border-radius: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  -webkit-box-shadow: -4px 2px 26px -1px rgba(0, 0, 0, 0.24);
+          box-shadow: -4px 2px 26px -1px rgba(0, 0, 0, 0.24);
+}
+
+.hero-section {
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 40px;
+}
+
+.hero-section .main-header-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.hero-section .hero-section-text {
+  margin-bottom: 80px;
+}
+
+.hero-section .hero-section-text .main-body-text {
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+  opacity: 0.7;
+  font-weight: 600;
+  max-width: 45vw;
+  margin-bottom: 40px;
+}
+
+.hero-section .hero-section-text .button-get-started {
+  background: -webkit-gradient(linear, left top, right top, from(#ff52bf), color-stop(#ff64c6), color-stop(#ff73cc), color-stop(#ff82d2), to(#ff8fd8));
+  background: linear-gradient(to right, #ff52bf, #ff64c6, #ff73cc, #ff82d2, #ff8fd8);
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 50px;
+  -webkit-box-shadow: -4px 2px 26px -1px rgba(0, 0, 0, 0.24);
+          box-shadow: -4px 2px 26px -1px rgba(0, 0, 0, 0.24);
+}
+
+.hero-section .hero-section-img img {
+  width: 80vw;
+}
+
+.metrics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 80px;
+}
+
+.metrics .card-text {
+  text-align: center;
+}
+
+.metrics h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 4em;
+  margin: 0;
+}
+
+.metrics p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  opacity: 0.5;
+}
+/*# sourceMappingURL=style.css.map */
