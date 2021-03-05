@@ -22,12 +22,13 @@ $mobile-width: "only screen and (max-width: 600px)";
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     // font-size: 18px;
 }
 
 
 body {
-    margin: 0;
     color: $cyan-dark;
 }
 
@@ -46,6 +47,7 @@ nav {
         padding-left: 30px;
         padding-right: 30px;
         box-shadow: $shadow;
+        white-space: nowrap;
     }
 
 }
@@ -54,25 +56,18 @@ nav {
 
     text-align: center;
     margin-top: 20%;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 
     .main-header-text {
         font-family: $poppins;
         font-weight: 700;
         font-size: 3em;
+        margin-bottom: 40px;
     }
 
     .hero-section-text {
         margin-bottom: 80px;
-
-        .main-body-text {
-            font-family: $open-sans-font;
-            margin: 0 auto;
-            opacity: 0.7;
-            font-weight: 600;
-            max-width: 45vw;
-            margin-bottom: 40px;
-        }
+        justify-content: center;
 
         .button-get-started {
             background: $pink-gradient;
@@ -88,20 +83,23 @@ nav {
 
     }
 
-    .hero-section-img {
-        // margin-top: 90px;
-
-        img {
-            width: 80vw;
-        }
+    .main-body-text {
+        font-family: $open-sans-font;
+        margin: 0 auto;
+        opacity: 0.7;
+        font-weight: 600;
+        width: 45vw;
+        margin-bottom: 40px;
     }
+
 }
 
 
 .metrics {
     display: flex;
-    justify-content: space-around;
-    margin-top: 80px;
+    justify-content: space-evenly;
+    // margin-top: 80px;
+    margin-bottom: 120px;
 
     .card-text {
         text-align: center;
@@ -111,7 +109,7 @@ nav {
         font-family: $open-sans-font;
         font-weight: 700;
         font-size: 4em;
-        margin: 0;
+        margin-bottom: 10px;
     }
 
     p {
@@ -121,10 +119,87 @@ nav {
     }
 }
 
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.slogan-1,
+.slogan-3 {
+    background: $pale-blue;
+    position: relative;
+}
+
+
+.slogan {
+
+    img {
+        width: 50%;
+    }
+}
 
 
 
 
 
+@media #{$mobile-width} {
 
-@media #{$mobile-width} {}
+    nav {
+        align-items: center;
+        padding: 30px 15px 5px 15px;
+
+        img {
+            width: 45%;
+        }
+
+        .button-nav-light {
+            padding: 8px 19px;
+        }
+    }
+
+    .hero-section {
+        margin-top: 40%;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .main-header-text {
+            font-size: 1.6em;
+            margin-bottom: 25px;
+        }
+
+        .main-body-text {
+            width: 79vw;
+            font-size: 0.8rem;
+        }
+
+        .hero-section-text {
+            margin-bottom: 120px;
+        }
+    }
+
+    .hero-section-img {
+        img {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+
+    .metrics {
+        flex-direction: column;
+        text-align: center;
+
+        div {
+            margin-bottom: 40px;
+        }
+
+        .card-text{
+            text-align: inherit;
+        }
+
+        img {
+            padding-right: 130px;
+        }
+    }
+}
