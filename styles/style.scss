@@ -277,6 +277,14 @@ footer {
 
     .newsletter-container {
         width: 50%;
+
+        p{
+            width: 60%;
+        }
+
+        form{
+            display: flex;
+        }
     }
 
     .phone-number-container {
@@ -468,5 +476,47 @@ form input:focus {
 
     .button-get-started {
         padding: 12px 35px;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        padding: 60px 30px;
+
+        h4{
+            font-size: 1.5rem;
+        }
+
+        .newsletter-container {
+            width: 100%;
+        }
+
+        .contact-container {
+            width: 100%;
+        }
+    }
+
+    footer::before {
+        content: url(../images/bg-footer-top-mobile.svg);
+        position: absolute;
+        bottom: 98%;
+        width: 100%;
+        left: 0;
+    }
+
+    .newsletter-container{
+        margin-bottom: 100px;
+
+        form{
+            input{
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+
+        .subscribe-button{
+            width: 50%;
+            margin-left: auto;
+            display: block;
+        }
     }
 }
