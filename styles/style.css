@@ -204,7 +204,7 @@ nav .button-nav-light {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 200px;
+  margin-bottom: 250px;
 }
 
 .call-to-action h4 {
@@ -224,15 +224,20 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
+  position: relative;
 }
 
 footer p {
   font-weight: 600;
-  opacity: 0.8;
+  opacity: 0.7;
+  margin-bottom: 30px;
 }
 
 footer h4 {
@@ -252,6 +257,60 @@ footer .contact-container {
 
 footer .newsletter-container {
   width: 50%;
+}
+
+footer .phone-number-container {
+  margin-bottom: 40px;
+}
+
+footer .phone-number-container span {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+footer .phone-number-container span img {
+  margin-right: 10px;
+}
+
+footer::before {
+  content: url(../images/bg-footer-top-desktop.svg);
+  position: absolute;
+  bottom: 98%;
+  width: 100%;
+  left: -1%;
+}
+
+.social-icons img {
+  width: 1.6rem;
+  margin-right: 10px;
+}
+
+form input {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  padding: 10px 20px;
+  width: 60%;
+  margin-right: 20px;
+  border-radius: 5px;
+  border: 3px solid white;
+}
+
+form input:focus {
+  outline: none;
+  border: 3px solid #ff4242;
+}
+
+.subscribe-button {
+  outline: none;
+  border: none;
+  padding: 14px 30px;
+  font-weight: 700;
+  background: -webkit-gradient(linear, left top, right top, from(#ff52bf), color-stop(#ff64c6), color-stop(#ff73cc), color-stop(#ff82d2), to(#ff8fd8));
+  background: linear-gradient(to right, #ff52bf, #ff64c6, #ff73cc, #ff82d2, #ff8fd8);
+  color: #ffffff;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 600px) {

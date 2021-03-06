@@ -100,16 +100,28 @@
       <img class="logo-light" src="./images/logo-light.svg" alt="Huddle logo light">
       <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Mauris nulla quam, hendrerit<br> lacinia 
       vestibulum a, ultrices quis sem.</p>
-      <img src="./images/icon-phone.svg" alt="phone number"> Phone: +1-543-123-4567<br>
-      <img src="./images/icon-email.svg" alt="email address"> example@huddle.com
+      <div class="phone-number-container">
+        <span><img src="./images/icon-phone.svg" alt="phone number">Phone: +1-543-123-4567</span><br>
+        <span><img src="./images/icon-email.svg" alt="email address">example@huddle.com</span>
+      </div>
+      <div class="social-icons">
+        <img src="./images/facebook-square-brands.svg" alt="Facebook">
+        <img src="./images/instagram-brands.svg" alt="Instagram">
+        <img src="./images/twitter-square-brands.svg" alt="Twitter">
+      </div>
     </div>  
     
     <div class="newsletter-container">
       <h4>Newsletter</h4>
       <p>To recieve tips on how to grow your community,<br> sign up to our weekly newsletter. We’ll never 
       send you<br> spam or pass on your email address</p>
-    <input type="email">
-    <button class="suscribe-button">Subscribe</button>
+      <form>          
+          <input 
+            id="email-input" 
+            type="email" 
+            name="email-inputted" >
+        <button type="submit" class="subscribe-button">Subscribe</button>
+      </form>
   </div>
 </footer>
 </body>

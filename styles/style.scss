@@ -228,7 +228,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 200px;
+    margin-bottom: 250px;
 
     h4 {
         font-family: $poppins;
@@ -247,14 +247,17 @@ footer {
     color: #ffffff;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
+    position: relative;
 
     p {
         font-weight: 600;
-        opacity: 0.8;
+        opacity: 0.7;
+        margin-bottom: 30px;
     }
 
     h4 {
@@ -275,6 +278,60 @@ footer {
     .newsletter-container {
         width: 50%;
     }
+
+    .phone-number-container {
+        margin-bottom: 40px;
+
+        span {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-weight: 400;
+        opacity: 0.7;
+
+        img {
+            margin-right: 10px;
+            }
+        }
+    }
+}
+
+footer::before {
+    content: url(../images/bg-footer-top-desktop.svg);
+    position: absolute;
+    bottom: 98%;
+    width: 100%;
+    left: -1%;
+}
+
+
+.social-icons img {
+    width: 1.6rem;
+    margin-right: 10px;
+}
+
+form input {
+    font-family: $open-sans-font;
+    font-weight: 700;
+    padding: 10px 20px;
+    width: 60%;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 3px solid white;
+}
+
+form input:focus {
+    outline: none;
+    border: 3px solid $red-light;
+}
+
+.subscribe-button {
+    outline: none;
+    border: none;
+    padding: 14px 30px;
+    font-weight: 700;
+    background: $pink-gradient;
+    color: #ffffff;
+    border-radius: 5px;
 }
 
 
