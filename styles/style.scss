@@ -32,6 +32,9 @@ body {
     color: $cyan-dark;
 }
 
+
+//navigation
+
 nav {
     padding: 40px 60px 20px 60px;
     display: flex;
@@ -52,6 +55,9 @@ nav {
 
 }
 
+
+//hero-section
+
 .hero-section {
 
     text-align: center;
@@ -69,17 +75,6 @@ nav {
         margin-bottom: 80px;
         justify-content: center;
 
-        .button-get-started {
-            background: $pink-gradient;
-            color: #ffffff;
-            font-family: $open-sans-font;
-            font-weight: 700;
-            outline: none;
-            border: none;
-            border-radius: 30px;
-            padding: 15px 50px;
-            box-shadow: $shadow;
-        }
 
     }
 
@@ -94,12 +89,27 @@ nav {
 
 }
 
+.button-get-started {
+    background: $pink-gradient;
+    color: #ffffff;
+    font-family: $open-sans-font;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 50px;
+    box-shadow: $shadow;
+}
+
+
+
+//metric section
 
 .metrics {
     display: flex;
     justify-content: space-evenly;
     // margin-top: 80px;
-    margin-bottom: 120px;
+    margin-bottom: 200px;
 
     .card-text {
         text-align: center;
@@ -119,10 +129,43 @@ nav {
     }
 }
 
-.row {
+
+
+//slogan section
+
+.slogan {
     display: flex;
     justify-content: space-evenly;
-    padding: 20px;
+    padding: 40px 60px;
+    align-items: center;
+    margin-bottom: 200px;
+
+    .slogan-text-container {
+
+        h5 {
+            font-family: $poppins;
+            font-weight: 700;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-family: $open-sans-font;
+            font-weight: 600;
+            text-align: justify;
+            width: 70%;
+            opacity: 0.7;
+        }
+    }
+
+    .slogan-img {
+        text-align: center;
+    }
+
+    img {
+        height: auto;
+        width: 50%;
+    }
 }
 
 .slogan-1,
@@ -131,18 +174,111 @@ nav {
     position: relative;
 }
 
+.slogan-1::before {
+    content: url(../images/bg-section-top-desktop-1.svg);
+    position: absolute;
+    bottom: 40%;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
 
-.slogan {
+.slogan-1::after {
+    content: url(../images/bg-section-bottom-desktop-1.svg);
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    // height: 100%;
+    overflow-x: hidden;
+    top: 100%;
+}
 
-    img {
+
+.slogan-2 .slogan-img {
+    text-align: left;
+}
+
+
+.slogan-3::before {
+    content: url(../images/bg-section-top-desktop-2.svg);
+    position: absolute;
+    bottom: 41%;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.slogan-3::after {
+    content: url(../images/bg-section-bottom-desktop-2.svg);
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    // height: 100%;
+    overflow-x: hidden;
+    top: 100%;
+}
+
+
+//call to actin section
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+
+    h4 {
+        font-family: $poppins;
+        font-weight: 700;
+        font-size: 2.8em;
+        margin-bottom: 40px;
+    }
+}
+
+
+//footer
+
+footer {
+    background: $cyan-dark;
+    font-family: $open-sans-font;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    p {
+        font-weight: 600;
+        opacity: 0.8;
+    }
+
+    h4 {
+        font-size: 1.7em;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .logo-light {
+        margin-bottom: 20px;
+    }
+
+    .contact-container {
+        width: 30%;
+    }
+
+    .newsletter-container {
         width: 50%;
     }
 }
 
 
-
-
-
+//media query for mobile
 @media #{$mobile-width} {
 
     nav {
@@ -189,17 +325,91 @@ nav {
     .metrics {
         flex-direction: column;
         text-align: center;
+        margin-bottom: 150px;
 
         div {
             margin-bottom: 40px;
         }
 
-        .card-text{
+        .card-text {
             text-align: inherit;
         }
 
         img {
             padding-right: 130px;
         }
+    }
+
+    .slogan {
+        flex-direction: column-reverse;
+        padding: 50px 20px;
+        margin-bottom: 100px;
+
+        .slogan-img {
+            margin-bottom: 60px;
+        }
+
+        img {
+            width: 75%;
+        }
+
+        .slogan-text-container {
+            text-align: center;
+            // width: 90vw;
+
+            h5 {
+                font-size: 1.5em;
+            }
+
+            p {
+                width: 100%;
+                text-align: center;
+                font-size: 0.8em;
+            }
+        }
+    }
+
+    .slogan-1::before {
+        content: url(../images/bg-section-top-mobile-1.svg);
+        bottom: 20%;
+    }
+
+    .slogan-1::after {
+        content: url(../images/bg-section-bottom-mobile-1.svg);
+    }
+
+    .slogan-2 {
+        flex-direction: column;
+    }
+
+    .slogan-2 .slogan-img {
+        text-align: center;
+    }
+
+    .slogan-2 .slogan-text-container {
+        text-align: center;
+    }
+
+    .slogan-3::before {
+        content: url(../images/bg-section-top-mobile-2.svg);
+        bottom: 20%;
+    }
+
+    .slogan-3::after {
+        content: url(../images/bg-section-bottom-mobile-2.svg);
+    }
+
+    .slogan-3 {
+        margin-bottom: 170px;
+    }
+
+    .call-to-action {
+        text-align: center;
+        font-size: 0.5em;
+        margin-bottom: 200px;
+    }
+
+    .button-get-started {
+        padding: 12px 35px;
     }
 }
